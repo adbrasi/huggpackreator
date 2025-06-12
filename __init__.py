@@ -221,7 +221,7 @@ class HuggingFaceUploadNode:
                 "trigger_image_1": ("IMAGE",),
                 "trigger_image_2": ("IMAGE",),
                 "trigger_image_3": ("IMAGE",),
-                "trigger_image_4": ("IMAGE",),
+                "trigger_image_4": ("IMAGE",), # <-- ADICIONADO AQUI
             }
         }
     
@@ -230,7 +230,8 @@ class HuggingFaceUploadNode:
     FUNCTION = "upload_folder"
     CATEGORY = "upload"
     
-    def upload_folder(self, hf_token, repo_id, folder_path, zip_name, trigger_image_1, trigger_image_2, trigger_image_3):
+    #                                                                                                             e ADICIONADO AQUI -->
+    def upload_folder(self, hf_token, repo_id, folder_path, zip_name, trigger_image_1, trigger_image_2, trigger_image_3, trigger_image_4):
         """
         Função principal que executa o upload
         As imagens são apenas triggers, não são usadas
