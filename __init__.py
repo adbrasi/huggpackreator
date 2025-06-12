@@ -221,6 +221,7 @@ class HuggingFaceUploadNode:
                 "trigger_image_1": ("IMAGE",),
                 "trigger_image_2": ("IMAGE",),
                 "trigger_image_3": ("IMAGE",),
+                "trigger_image_4": ("IMAGE",),
             }
         }
     
